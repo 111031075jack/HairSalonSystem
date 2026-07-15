@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
+// Ctrl + Shift + K直接就會把修改過內容全部git上去
 @WebServlet("/home")
 public class HomePageServlet extends HttpServlet {
 
