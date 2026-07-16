@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DBUtil {
-	private static final String DB_URL = "jdbc:mysql://hairsalonsystem:3306/educenter?useSSL=false&serverTimeZone=Asia/Taipei";
+	private static final String DB_URL = "jdbc:mysql://localhost:3306/hairsalonsystem?useSSL=false&serverTimeZone=Asia/Taipei";
 	private static final String USERNAME = "root";
 	private static final String PASSWORD = "12345678";
 	
