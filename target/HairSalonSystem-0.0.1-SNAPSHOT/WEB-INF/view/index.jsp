@@ -19,10 +19,10 @@
 
         <div class="container">
 
-            <a class="navbar-brand fw-bold fs-4 text-warning" href="#">💇‍️ NANA's HairSalon</a>
+            <a class="navbar-brand fw-bold fs-4 text-warning" href="#"> NANA's HairSalon</a>
 
             <div class="d-flex align-items-center gap-4"> <% if (loginMember == null) { %>
-                <a href="register.jsp" class="btn btn-outline-warning fw-bold">免費註冊</a>
+                <a href="register" class="btn btn-outline-warning fw-bold">免費註冊</a>
                 <a href="login.jsp" class="btn btn-outline-light me-2">會員登入</a>
                 <% } else { %>
                 <span class="text-white fs-5"> 歡迎 <%= loginMember.getName() %> 登入 !</span>

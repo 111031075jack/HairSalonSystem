@@ -14,13 +14,22 @@
     </head>
 
     <body class="bg-light"> <div class="container mt-5">
+        <%
+            String msg = (String) request.getAttribute("msg");
+        %>
         <div class="row justify-content-center">
             <div class="col-md-6"> <div class="card shadow-sm border-0">
                 <div class="card-body p-5 bg-white rounded">
+                    <% if (msg != null) { %>
 
-                    <h2 class="text-center fw-bold text-dark mb-4">加入 NANA's 會員</h2>
+                    <div class="alert alert-danger" role="alert">
 
-    <form action="RegisterServlet" method="post">
+                        ⚠️ <%= msg %>
+
+                    </div>
+                    <% } %><h2 class="text-center fw-bold text-dark mb-4">加入 NANA's 會員</h2>
+
+    <form action="register" method="post">
         <div class="mb-3">
            <label class="form-label">帳號</label>
            <input type="text" class="form-control" name="username" placeholder="請輸入註冊帳號" />
